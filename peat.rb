@@ -9,6 +9,6 @@ class Peat < Formula
   end
 
   test do
-    system "#{bin}/peat", "help"
+    system "#{bin}/peat", "--help"
   end
 end
