@@ -1,4 +1,5 @@
 class Latexrun < Formula
+  desc "Modern LaTeX wrapper"
   homepage "https://github.com/aclements/latexrun"
   head "https://github.com/aclements/latexrun.git"
 
