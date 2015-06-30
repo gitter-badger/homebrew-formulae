@@ -8,8 +8,6 @@ install:
   - gem install --no-document rubocop
 env:
   - PACKAGE=latexrun OPTIONS="--HEAD"
-  - PACKAGE=peat
-  - PACKAGE=peat OPTIONS="--HEAD"
 script:
   - rubocop --config=$(brew --repo)/Library/.rubocop.yml ${PACKAGE}.rb
   - if [ "$OPTIONS" != "--HEAD" ]; then brew audit $PACKAGE; fi
